@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Medium Maze</title>
+    <title>Extreme Maze</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
 
@@ -24,7 +24,20 @@
   <header>
     <div class="header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-6 fw-normal">Question #10</h1>
-      <h6 class="display-12 fw-normal">How do you start writing a for loop in Python?</h6>
+      <h6 class="display-12 fw-normal">Which is the output of the following code?</h6>
+      <p>class P: 
+   def __init__(self): 
+      self.__x=100 
+      self.y=200 
+   def print(self): 
+      print(self.__x, self.y)  
+class C(P): 
+   def __init__(self): 
+      super().__init__() 
+      self.__x=300 
+      self.y=400  
+d = C() 
+d.print()</p>
     </div>
   </header>
 
@@ -32,17 +45,27 @@
     <div class="row row-cols-1 row-cols-md-12 mb-12 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm bg-danger text-white">
-            <a type="button" class="w-100 btn btn-lg btn-danger text-white" href="incorrect.html">for x > y:</a>
+            <a type="button" class="w-100 btn btn-lg btn-danger text-white" href="incorrect.html">300 400</a>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm bg-warning text-white">
-            <a type="button" class="w-100 btn btn-lg btn-warning text-white" href="win.html">for x in y:</a>
+            <a type="button" class="w-100 btn btn-lg btn-warning text-white" href="win.html">100 400</a>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm bg-danger text-white">
-            <a type="button" class="w-100 btn btn-lg btn-success text-white" href="incorrect.html">for each x in y:</a>
+            <a type="button" class="w-100 btn btn-lg btn-success text-white" href="incorrect.html">100 200</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm bg-warning text-white">
+            <a type="button" class="w-100 btn btn-lg btn-primary text-white" href="incorrect.html">300 200</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm bg-warning text-white">
+            <a type="button" class="w-100 btn btn-lg btn-info text-white" href="incorrect.html">Undefined</a>
         </div>
       </div>
     </div>
